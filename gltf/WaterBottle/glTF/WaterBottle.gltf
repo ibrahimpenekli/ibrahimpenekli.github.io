@@ -1,190 +1,172 @@
 {
-    "accessors" : [
-        {
-            "bufferView" : 0,
-            "componentType" : 5123,
-            "count" : 13530,
-            "max" : [
-                2548
-            ],
-            "min" : [
-                0
-            ],
-            "type" : "SCALAR"
-        },
-        {
-            "bufferView" : 1,
-            "componentType" : 5126,
-            "count" : 2549,
-            "max" : [
-                0.20432522892951965,
-                0.2043253779411316,
-                -0.004668737296015024
-            ],
-            "min" : [
-                -0.20432522892951965,
-                -0.20432519912719727,
-                -0.9819799065589905
-            ],
-            "type" : "VEC3"
-        },
-        {
-            "bufferView" : 2,
-            "componentType" : 5126,
-            "count" : 2549,
-            "max" : [
-                1.0,
-                1.0,
-                0.999969482421875
-            ],
-            "min" : [
-                -1.0,
-                -1.0,
-                -1.0
-            ],
-            "type" : "VEC3"
-        },
-        {
-            "bufferView" : 3,
-            "componentType" : 5126,
-            "count" : 2549,
-            "max" : [
-                1.0,
-                1.0,
-                0.8874360918998718,
-                1.0
-            ],
-            "min" : [
-                -1.0,
-                -1.0,
-                -0.887436032295227,
-                -1.0
-            ],
-            "type" : "VEC4"
-        },
-        {
-            "bufferView" : 4,
-            "componentType" : 5126,
-            "count" : 2549,
-            "max" : [
-                0.9884517192840576,
-                1.9737330079078674
-            ],
-            "min" : [
-                0.01567820832133293,
-                1.0313312411308289
-            ],
-            "type" : "VEC2"
-        }
-    ],
-    "asset" : {
-        "generator" : "Khronos Blender glTF 2.0 exporter",
-        "version" : "2.0"
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 2549,
+      "type": "VEC2"
     },
-    "bufferViews" : [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 2549,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 2549,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 2549,
+      "type": "VEC3",
+      "max": [
+        0.05445001,
+        0.130220339,
+        0.0544500239
+      ],
+      "min": [
+        -0.05445001,
+        -0.130220339,
+        -0.0544500239
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 13530,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "generator": "glTF Tools for Unity",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 20392
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 20392,
+      "byteLength": 30588
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 50980,
+      "byteLength": 40784
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 91764,
+      "byteLength": 30588
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 122352,
+      "byteLength": 27060
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "WaterBottle.bin",
+      "byteLength": 149412
+    }
+  ],
+  "images": [
+    {
+      "uri": "WaterBottle_baseColor.png"
+    },
+    {
+      "uri": "WaterBottle_occlusionRoughnessMetallic.png"
+    },
+    {
+      "uri": "WaterBottle_normal.png"
+    },
+    {
+      "uri": "WaterBottle_emissive.png"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
         {
-            "buffer" : 0,
-            "byteLength" : 27060,
-            "byteOffset" : 0,
-            "target" : 34963
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 30588,
-            "byteOffset" : 27060,
-            "target" : 34962
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 30588,
-            "byteOffset" : 57648,
-            "target" : 34962
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 40784,
-            "byteOffset" : 88236,
-            "target" : 34962
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 20392,
-            "byteOffset" : 129020,
-            "target" : 34962
+          "attributes": {
+            "TEXCOORD_0": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "POSITION": 3
+          },
+          "indices": 4,
+          "material": 0
         }
-    ],
-    "buffers" : [
-        {
-            "byteLength" : 149412,
-            "uri" : "WaterBottle.bin"
-        }
-    ],
-    "images": [
-        {
-          "uri": "WaterBottle_baseColor.jpg"
+      ],
+      "name": "WaterBottle"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
         },
-        {
-          "uri": "WaterBottle_occlusionRoughnessMetallic.jpg"
-        },
-        {
-          "uri": "WaterBottle_normal.jpg",
-        },
-        {
-          "uri": "WaterBottle_emissive.jpg"
+        "metallicRoughnessTexture": {
+          "index": 1
         }
-    ],
-    "meshes" : [
-        {
-            "name" : "WaterBottle",
-            "primitives" : [
-                {
-                    "attributes" : {
-                        "NORMAL" : 2,
-                        "POSITION" : 1,
-                        "TANGENT" : 3,
-                        "TEXCOORD_0" : 4
-                    },
-                    "indices" : 0
-                }
-            ]
-        }
-    ],
-    "nodes" : [
-        {
-            "children" : [
-                1
-            ],
-            "name" : "SceneRoot",
-            "rotation" : [
-                -3.090862321641907e-08,
-                0.7071067094802856,
-                -0.7071068286895752,
-                -3.0908616110991716e-08
-            ]
-        },
-        {
-            "mesh" : 0,
-            "name" : "WaterBottle",
-            "rotation" : [
-                0.0,
-                0.0,
-                -1.0,
-                0.0
-            ],
-            "translation" : [
-                -2.117582368135751e-22,
-                0.0,
-                -0.0
-            ]
-        }
-    ],
-    "scene" : 0,
-    "scenes" : [
-        {
-            "name" : "Scene",
-            "nodes" : [
-                0
-            ]
-        }
-    ]
+      },
+      "normalTexture": {
+        "index": 2
+      },
+      "occlusionTexture": {
+        "index": 1
+      },
+      "emissiveFactor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissiveTexture": {
+        "index": 3
+      },
+      "name": "BottleMat"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "name": "WaterBottle"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "source": 0
+    },
+    {
+      "source": 1
+    },
+    {
+      "source": 2
+    },
+    {
+      "source": 3
+    }
+  ]
 }
