@@ -119,6 +119,20 @@
             "uri" : "WaterBottle.bin"
         }
     ],
+    "images": [
+        {
+          "uri": "WaterBottle_baseColor.jpg"
+        },
+        {
+          "uri": "WaterBottle_occlusionRoughnessMetallic.jpg"
+        },
+        {
+          "uri": "WaterBottle_normal.jpg",
+        },
+        {
+          "uri": "WaterBottle_emissive.jpg"
+        }
+    ],
     "meshes" : [
         {
             "name" : "WaterBottle",
