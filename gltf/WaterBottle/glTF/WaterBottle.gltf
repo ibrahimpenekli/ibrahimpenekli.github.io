@@ -4,66 +4,107 @@
       "bufferView": 0,
       "componentType": 5126,
       "count": 2549,
-      "type": "VEC2"
+      "type": "VEC3",
+      "max": [
+        0.054450009018182755,
+        0.13022033870220184,
+        0.054450023919343948
+      ],
+      "min": [
+        -0.054450009018182755,
+        -0.13022033870220184,
+        -0.054450023919343948
+      ]
     },
     {
       "bufferView": 1,
       "componentType": 5126,
       "count": 2549,
-      "type": "VEC3"
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.99998795986175537,
+        -1.0
+      ]
     },
     {
       "bufferView": 2,
       "componentType": 5126,
       "count": 2549,
-      "type": "VEC4"
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.95414859056472778,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.95420628786087036,
+        -1.0,
+        -1.0
+      ]
     },
     {
       "bufferView": 3,
       "componentType": 5126,
       "count": 2549,
-      "type": "VEC3",
+      "type": "VEC2",
       "max": [
-        0.05445001,
-        0.130220339,
-        0.0544500239
+        0.98845171928405762,
+        0.97373300790786743
       ],
       "min": [
-        -0.05445001,
-        -0.130220339,
-        -0.0544500239
+        0.015678208321332932,
+        0.031331241130828857
       ]
     },
     {
       "bufferView": 4,
       "componentType": 5123,
       "count": 13530,
-      "type": "SCALAR"
+      "type": "SCALAR",
+      "max": [
+        2548.0
+      ],
+      "min": [
+        0.0
+      ]
     }
   ],
   "asset": {
-    "generator": "glTF Tools for Unity",
     "version": "2.0"
   },
+  "buffers": [
+    {
+      "uri": "WaterBottle.bin",
+      "byteLength": 149412
+    }
+  ],
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 20392
-    },
-    {
-      "buffer": 0,
-      "byteOffset": 20392,
       "byteLength": 30588
     },
     {
       "buffer": 0,
-      "byteOffset": 50980,
+      "byteOffset": 30588,
+      "byteLength": 30588
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 61176,
       "byteLength": 40784
     },
     {
       "buffer": 0,
-      "byteOffset": 91764,
-      "byteLength": 30588
+      "byteOffset": 101960,
+      "byteLength": 20392
     },
     {
       "buffer": 0,
@@ -71,24 +112,44 @@
       "byteLength": 27060
     }
   ],
-  "buffers": [
-    {
-      "uri": "WaterBottle.bin",
-      "byteLength": 149412
-    }
-  ],
   "images": [
     {
-      "uri": "WaterBottle_baseColor.png"
+      "uri": "WaterBottle_Emission_Map.jpg"
     },
     {
-      "uri": "WaterBottle_occlusionRoughnessMetallic.png"
+      "uri": "WaterBottle_Bump_Map.jpg"
     },
     {
-      "uri": "WaterBottle_normal.png"
+      "uri": "WaterBottle_Metallic_Gloss_Map.jpg"
     },
     {
-      "uri": "WaterBottle_emissive.png"
+      "uri": "WaterBottle_Main_Tex.jpg"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      },
+      "emissiveTexture": {
+        "index": 0
+      },
+      "emissiveFactor": [
+        1.0,
+        1.0,
+        1.0
+      ]
     }
   ],
   "meshes": [
@@ -96,56 +157,40 @@
       "primitives": [
         {
           "attributes": {
-            "TEXCOORD_0": 0,
+            "POSITION": 0,
             "NORMAL": 1,
             "TANGENT": 2,
-            "POSITION": 3
+            "TEXCOORD_0": 3
           },
           "indices": 4,
           "material": 0
         }
-      ],
-      "name": "WaterBottle"
-    }
-  ],
-  "materials": [
-    {
-      "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 0
-        },
-        "metallicRoughnessTexture": {
-          "index": 1
-        }
-      },
-      "normalTexture": {
-        "index": 2
-      },
-      "occlusionTexture": {
-        "index": 1
-      },
-      "emissiveFactor": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "emissiveTexture": {
-        "index": 3
-      },
-      "name": "BottleMat"
+      ]
     }
   ],
   "nodes": [
     {
+      "children": [
+        1
+      ]
+    },
+    {
       "mesh": 0,
       "rotation": [
         0.0,
-        1.0,
+        -0.562152147,
         0.0,
-        0.0
+        0.8270338
       ],
-      "name": "WaterBottle"
+      "scale": [
+        3.73236084,
+        3.73236132,
+        3.73236132
+      ]
     }
+  ],
+  "samplers": [
+    {}
   ],
   "scene": 0,
   "scenes": [
@@ -157,15 +202,19 @@
   ],
   "textures": [
     {
+      "sampler": 0,
       "source": 0
     },
     {
+      "sampler": 0,
       "source": 1
     },
     {
+      "sampler": 0,
       "source": 2
     },
     {
+      "sampler": 0,
       "source": 3
     }
   ]
